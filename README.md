@@ -1,7 +1,7 @@
 # xpshape
 NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 
-# Usage
+## Usage
 <pre>
    Usage: xpshape [-model AB|ACB]
                   [-dw #(Hz)] [-kab #(1/s)] [-kba #(1/s)]
@@ -25,20 +25,45 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
    -fid, (must be ...,1024,2048,4096,8192,16384,32768,65536,..)
 </pre>
 
-# Example
+## Example: protein ligand binding
 <pre>
-### Kd=10mM, [P]=2uM, [L]=5-200uM
+# Kd=10mM, [P]=2uM, [L]=5-200uM
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 5e-6 > tins.Kd.10mM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 10e-6 >> tins.Kd.10mM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 20e-6 >> tins.Kd.10mM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 50e-6 >> tins.Kd.10mM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 100e-6 >> tins.Kd.10mM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 200e-6 >> tins.Kd.10mM.dat
-### Kd=10uM, [P]=2uM, [L]=5-200uM
+# Kd=10uM, [P]=2uM, [L]=5-200uM
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 5e-6   >  tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 10e-6  >> tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 20e-6  >> tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 50e-6  >> tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 100e-6 >> tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 200e-6 >> tins.Kd.10uM.dat
+</pre>
+## Example output
+<pre>
+# peak shape simulation [A + C = B]
+# dw     = 628.319 (rad/s)
+# kab    = 1e+06 (1/s)
+# kba    = 10000 (1/s)
+# R20a   = 0.1 (1/s)
+# R20b   = 150 (1/s)
+# kon    = 1e+06 (1/s)
+# koff   = 10000 (1/s)
+# Kd     = 0.01 (M)
+# pb     = 0.00049965
+# [A]ini = 2e-06 (M)
+# [C]ini = 5e-06 (M)
+# [A]    = 1.999e-06 (M)
+# [C]    = 4.999e-06 (M)
+# [B]    = 9.99301e-10 (M)
+# FID    = 8192 (complex points)
+# SWH    = 600 (Hz)
+# X-axis unit: (Hz)
+-300 0.00512234
+-299.927 0.00512234
+-299.854 0.00512233
+-299.78 0.00512232
 </pre>
