@@ -48,7 +48,9 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 100e-6 >> tins.Kd.10uM.dat
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+1 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 200e-6 >> tins.Kd.10uM.dat
 </pre>
-## Example output
+
+
+### Example output
 <pre>
 # peak shape simulation [A + C = B]
 # dw     = 628.319 (rad/s)
