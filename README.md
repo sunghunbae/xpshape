@@ -1,7 +1,7 @@
 # xpshape
 NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 
-![Bloch-McConnell equation](https://raw.githubusercontent.com/sunghunbae/xpshape/reference/Bloch-McConnell.png)
+![Bloch-McConnell equation](https://github.com/sunghunbae/xpshape/raw/master/reference/Bloch-McConnell.png)
 
 ### References
 1. Ulrich L. Gunther and Brian Schaffhausen (2002), J. Biomol. NMR 22, 201-209. NMRKIN: Simulating line shapes from two-dimensional spectra of proteins upon ligand binding. 
@@ -77,4 +77,4 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 -299.78 0.00512232
 ...... omitted ......
 </pre>
-![output plot using XMGRACE](https://raw.githubusercontent.com/sunghunbae/xpshape/example/example.png)
+![output plot using XMGRACE](https://github.com/sunghunbae/xpshape/raw/master/example/example.png)
