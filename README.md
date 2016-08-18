@@ -2,7 +2,7 @@
 NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 ![Bloch-McConnell equation](https://raw.githubusercontent.com/sunghunbae/xpshape/reference/Bloch-McConnell.png)
 
-## References: 
+### References
 1. Ulrich L. Gunther and Brian Schaffhausen (2002), J. Biomol. NMR 22, 201. NMRKIN: Simulating line shapes from two-dimensional spectra of proteins upon ligand binding. 
 2. Hiroshi Matsuo et al. (1999) J. Am. Chem. Soc 121, 9903. Identification by NMR Spectroscopy of Residues at Contact Surfaces in Large, Slowly Exchanging Macromolecular Complexes
 3. Harden M. McConnell (1958) J. Chem. Physics. 28. Reaction Rates by Nuclear Magnetic Resonance
