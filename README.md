@@ -9,10 +9,10 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 3. Harden M. McConnell (1958) J. Chem. Physics. 28, 430-431. Reaction Rates by Nuclear Magnetic Resonance
 
 ### Compile - requires GNU Scientific Library
-<pre>
+```
 $ cd source
 $ make
-</pre>
+```
 
 ### Usage
 <pre>
