@@ -66,4 +66,5 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 -299.927 0.00512234
 -299.854 0.00512233
 -299.78 0.00512232
+...... omitted ......
 </pre>
