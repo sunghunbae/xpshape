@@ -3,11 +3,11 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 ![Bloch-McConnell equation](https://raw.githubusercontent.com/sunghunbae/xpshape/reference/Bloch-McConnell.png)
 
 ### References
-1. Ulrich L. Gunther and Brian Schaffhausen (2002), J. Biomol. NMR 22, 201. NMRKIN: Simulating line shapes from two-dimensional spectra of proteins upon ligand binding. 
-2. Hiroshi Matsuo et al. (1999) J. Am. Chem. Soc 121, 9903. Identification by NMR Spectroscopy of Residues at Contact Surfaces in Large, Slowly Exchanging Macromolecular Complexes
-3. Harden M. McConnell (1958) J. Chem. Physics. 28. Reaction Rates by Nuclear Magnetic Resonance
+1. Ulrich L. Gunther and Brian Schaffhausen (2002), J. Biomol. NMR 22, 201-209. NMRKIN: Simulating line shapes from two-dimensional spectra of proteins upon ligand binding. 
+2. Hiroshi Matsuo et al. (1999) J. Am. Chem. Soc 121, 9903-9904. Identification by NMR Spectroscopy of Residues at Contact Surfaces in Large, Slowly Exchanging Macromolecular Complexes
+3. Harden M. McConnell (1958) J. Chem. Physics. 28, 430-431. Reaction Rates by Nuclear Magnetic Resonance
 
-## Usage
+### Usage
 <pre>
    Usage: xpshape [-model AB|ACB]
                   [-dw #(Hz)] [-kab #(1/s)] [-kba #(1/s)]
@@ -31,7 +31,7 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
    -fid, (must be ...,1024,2048,4096,8192,16384,32768,65536,..)
 </pre>
 
-## Example: protein ligand binding
+### Example: protein ligand binding
 <pre>
 # Kd=10mM, [P]=2uM, [L]=5-200uM
 ./xpshape -model ACB -dw 100 -kab 1e+6 -kba 1e+4 -R20a 0.1 -R20b 150 -a0 2e-6 -c0 5e-6 > tins.Kd.10mM.dat
