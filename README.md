@@ -68,4 +68,4 @@ NMR eXchange Peak SHAPE simulation of the Bloch-McConnell equation
 -299.78 0.00512232
 ...... omitted ......
 </pre>
-![alt tag](https://raw.githubusercontent.com/sunghunbae/xpshape/example/example.png)
+![output plot using XMGRACE](https://raw.githubusercontent.com/sunghunbae/xpshape/example/example.png)
